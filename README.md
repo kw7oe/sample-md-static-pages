@@ -1,24 +1,20 @@
-# README
+## Sample Rails App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a sample application generate static pages dynamically using `kramdown`
+or `rake` task
 
-Things you may want to cover:
+### Up and running
 
-* Ruby version
+```
+$ bundle install
+$ rails server
+```
 
-* System dependencies
+Visit [http://localhost:3000/pages/about](http://localhost:3000/pages/about)
 
-* Configuration
+### Related Codes
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- `app/views/pages/about.md`
+- `app/views/pages/about.html.erb`
+- `app/controllers/pages_controller.rb`
+- `Rakefile`
